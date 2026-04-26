@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/txtPergunta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="40dp"
+        android:paddingBottom="16dp"
+        android:text="Pergunta\n(Question)"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/edtResposta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Sua resposta (Your answer)"
+        android:imeOptions="actionDone"
+        android:inputType="numberDecimal|numberSigned"
+        android:paddingBottom="16dp" />
+
+    <Button
+        android:id="@+id/btnResponder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:text="Responder (Answer)" />
+
+    <TextView
+        android:id="@+id/txtScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="4dp"
+        android:text="Pontuação (Score): 0" />
+
+    <TextView
+        android:id="@+id/txtErros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="4dp"
+        android:text="Erros (Errors): 0 / 3" />
+
+    <TextView
+        android:id="@+id/txtRecorde"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:text="Recorde (Record): 0" />
+
+    <!-- Nível discreto acima da barra -->
+    <TextView
+        android:id="@+id/txtNivel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="Lvl 1"
+        android:textColor="#444444"
+        android:textSize="12sp" />
+
+    <!-- Barra de progresso -->
+    <ProgressBar
+        android:id="@+id/progressoNivel"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#DDDDDD"
+        android:max="100"
+        android:progress="0"
+        android:progressTint="#4CAF50" />
+
+    <Button
+        android:id="@+id/btnCompartilhar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/btn_discreto"
+        android:backgroundTint="#4CAF50"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="8dp"
+        android:text="Compartilhar (Share)"
+        android:textColor="#FFFFFF" />
+
+
+    <!-- Botão para sair do jogo, cor discreta, Cinza claro, discreto,Texto escuro suave -->
+    <Button
+        android:id="@+id/btnSair"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/btn_discreto"
+        android:backgroundTint="#CCCCCC"
+        android:clipToOutline="true"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="8dp"
+        android:text="Sair do jogo\n(Exit game)"
+        android:textColor="#f7f7f7" />
+
+
+    <TextView
+        android:id="@+id/txtCredito"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:text="© Alex Cardoso Bento – 2025"
+        android:textColor="#888888"
+        android:textSize="12sp" />
+
+</LinearLayout>
